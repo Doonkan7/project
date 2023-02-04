@@ -78,3 +78,6 @@ function writeYourGenres() {
 }
 
 writeYourGenres();
+
+
+console.log((0.4 + 0.2).toFixed(1));

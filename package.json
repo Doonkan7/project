@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./node_js_course/lessons/process.js"
+    "start": "nodemon ./node_js_course/index.js"
   },
   "repository": {
     "type": "git",

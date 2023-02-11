@@ -6,9 +6,13 @@ const cluster = require('cluster');
 // console.log(os.cpus().length);
 
 if (cluster.isMaster) {
-    for (let i = 0; i < os.cpus().length - 2; i++) {
-        cluster.fork();
+    for (let i = 0; i < os.cpus().length - 10; i++) {
+        cluster.fork()
     }
+    cluster.on('exit', (worker, code, signal) => {
+        console.log(`Воркер с pid = ${worker.process.pid}  умер`);
+        cluster.fork();
+    });
 } else {
     console.log(`Воркер с pid= ${process.pid} запущен`);
 

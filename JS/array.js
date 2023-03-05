@@ -34,3 +34,38 @@ function compareNum(a, b) {
 // products.sort();
 // console.log(products.join('; '));
 
+// 1) Напишите функцию showFamily, которая будет принимать в себя массив строк и возвращать сообщение в нужном формате.
+//
+// showFamily(family)  => 'Семья состоит из: Peter Ann Alex Linda'
+//
+// Имена подставляются автоматически из массива. Если массив пустой, то выводится сообщение 'Семья пуста'
+
+const family = ['Peter', 'Ann', 'Alex', 'Linda'];
+
+function showFamily() {
+    if (family === undefined || family.length == 0) {
+        console.log(`Семья пуста`);
+    }
+    else {
+        console.log(`Семья состоит из: ${family}`);
+    }
+}
+
+showFamily(family);
+
+// 2) напишите функцию standardizeStrings, которая будет принимать в себя массив строк и будет выводить
+// в консоль эти строки в нижнем регистре.
+
+/const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
+
+function standardizeStrings() {
+     favoriteCities.map(element => {
+         return element.toLowerCase();
+     }
+ }
+
+console.log(standardizeStrings(favoriteCities));
+
+arr.forEach(function(item, i, arr) {
+     console.log(`${i}: ${item} внутри массива ${arr}`);
+ });

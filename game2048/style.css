@@ -44,9 +44,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 7.5vmin;
     font-weight: bold;
-    background-color: hsl(25, 80%, var(--bg-lightness));
+    background-color: hsl(140, 80%, var(--bg-lightness));
     color: hsl(20, 25%, var(--text-lightness));
-    transition: 500ms;
+    transition: 100ms;
     animation: show 300ms;
 }
 

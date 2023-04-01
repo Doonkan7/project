@@ -18,7 +18,8 @@
   "dependencies": {
     "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "handsontable": "^12.3.2"
   },
   "bugs": {
     "url": "https://github.com/Doonkan7/project/issues"

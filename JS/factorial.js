@@ -1,8 +1,8 @@
 function factorial(n) {
     if (n <= 0 ) {
         return 1;
-    } if (n % 1 != 0 || isNaN(n)) {
-        return 'Число не может быть дробным или содержать символы';
+    } if (n % 1 != 0 || Number.isNaN(n)) {
+        return 'Значение не может быть дробным или содержать символы';
 
     } else {
         return n * factorial(n - 1);
